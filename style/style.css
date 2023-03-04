@@ -2,7 +2,7 @@
 
 :root {
     --bg-color: #f5df4e;
-    --tex-black-color: #212529;
+    --text-black-color: #212529;
     --secondry-color: #43121d;
     --third-color: #f98169;
     --white-color: #fff;
@@ -32,7 +32,7 @@
 /* cover section */
 #home {
     background-color:var(--bg-color) ;
-    color: var(--tex-black-color);
+    color: var(--text-black-color);
   }
   .large-heading {
     font-size: 5rem;
@@ -45,11 +45,22 @@
     margin-top: 2rem;
   }
   .btn-main {
-    background-color: var(--tex-black-color);
+    background-color: var(--text-black-color);
     padding: 10px 50px;
   }
   .btn-main:hover {
-    background-color: rgb(216, 101, 93);
+    background-color: rgb(167, 95, 90);
+    transition: 0.5s;
+  }
+  .btn-download {
+    border: 2px solid var(--text-black-color);
+    color:  var(--text-black-color);
+    padding: 10px 50px;
+  }
+  .btn-download:hover {
+    background-color: var(--text-black-color);
+    color: white;
+    transition: 0.5s;
   }
   /* About Section */
   .experience {
