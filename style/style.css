@@ -1,0 +1,161 @@
+/* Root color */
+
+:root {
+    --bg-color: #f5df4e;
+    --tex-black-color: #212529;
+    --secondry-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondry-font: 'Quicksand', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+
+/* NavBar */
+.navbar{
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(32, 32, 32, 0.129);
+    background-color: var(--bg-color);
+}
+
+.highlite {
+  background-color: var(--bg-color);
+  display: inline-block;
+  margin-top: 80px;
+}
+
+/* cover section */
+#home {
+    background-color:var(--bg-color) ;
+    color: var(--tex-black-color);
+  }
+  .large-heading {
+    font-size: 5rem;
+  }
+ 
+  .cover-img  img{
+    border: 20px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .btn-main {
+    background-color: var(--tex-black-color);
+    padding: 10px 50px;
+  }
+  .btn-main:hover {
+    background-color: rgb(92, 92, 194);
+  }
+  /* About Section */
+  .experience {
+    background-color: var(--bg-color);
+    margin: auto;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+  }
+  .experience-time {
+    font-size: 5rem;
+  }
+  /* Resume */
+  .progres {
+    background-color: var(--bg-color);
+  }
+ /* Portfolio Section */
+ .control ul li {
+  list-style: none;
+  padding: 5px 15px;
+  color: rgb(87, 48, 48);
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bolder;
+
+}
+.control ul li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--bg-color);
+  
+}
+.item {
+  position: relative;
+}
+.item span {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+  opacity: 0;
+}
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
+}
+.item:hover span {
+  opacity: 1;
+  transition: 0.5s;
+}
+.item:before {
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.171);
+  opacity: 0;
+  position: absolute;
+}
+.item:hover:before {
+  opacity: 1;
+  transition: 0.3s;
+}
+/* interst */
+.interest {
+  background-color: var(--bg-color);
+}
+/* Conatct */
+#contact {
+  background-color: var(--bg-color);
+}
+.fa-brands {
+  height: 30px;
+  width: 30px;
+}
+
+  /* Media quary */
+
+   /* small device */
+   @media (max-width: 768px) {
+    .cover {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cover-contain {
+      text-align: center;
+      padding: 10% 0;
+      
+    }
+   
+    .large-heading {
+      font-size: 3rem;
+    }
+  
+    
+
+   }
+ 
+  /* madiam device */
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+      .large-heading {
+        font-size: 3rem;
+      }
+  }
