@@ -1,16 +1,10 @@
 /* Root color */
-
+body {
+  font-family: "Poppins", sans-serif;
+}
 :root {
     --bg-color: #f5df4e;
     --text-black-color: #212529;
-    --secondry-color: #43121d;
-    --third-color: #f98169;
-    --white-color: #fff;
-    --text-color: #555;
-    --text-gray: #999;
-    --black-color: #000;
-    --primary-font: 'Roboto', sans-serif;
-    --secondry-font: 'Quicksand', sans-serif;
   }
   a {
     text-decoration: none;
